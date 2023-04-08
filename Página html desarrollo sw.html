@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página PSG</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<style>
+                #jugadores {
+                width: 450px;
+                height: 350px;
+                margin-bottom: -200px;
+                margin-left: -290px;
+                left: 50%;
+                top: 55%;
+                position: absolute;
+                }
+
+                #estadio {
+                width: 400px;
+                height: 150px;
+                margin-top: -200px;
+                margin-left: -290px;
+                left: 55%;
+                top: 55%;
+                position: absolute;
+                }
+
+                #bandera {
+                width: 250px;
+                height: 180px;
+                margin-top: -200px;
+                margin-left: -290px;
+                left: 70%;
+                top: 27%;
+                position: absolute;
+                }
+
+                #logo {
+                margin-top: 20px;
+                margin-bottom: 30px;
+                background-image: #FFF;
+                }
+
+                body {
+                padding-top: 35px;
+                padding-bottom: 35px;
+                background-image: linear-gradient(to bottom, #0047AB, #0047AB 10%, #0074D9 50%, #0074D9);
+                color: white;
+                }
+
+                A {
+                    background-image: linear-gradient(to right, blue 32%, white 34%, white 66%, red 66%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                }
+                form {
+                text-align: center;
+                }
+
+                form input {
+                margin-bottom: 10px;
+                }
+
+                form button {
+                margin-top: 20px;
+                }
+            </style>
+<center><h1>PSG</h1></center>
+<center><img src="https://www.futbox.com/img/v1/dec/a16/2de/d5b/5f48ab31361e15ec1700.png" alt="logo psg" class="img-fluid" id="logo"></center>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/200px-Flag_of_France.svg.png" alt="Imagen bandera" class="img-fluid" id="bandera">
+            <img src="https://www.elfutbolero.es/__export/1643286750832/sites/elfutboleromx/img/2022/01/27/psg-neymar-messi-mbappe.jpg_1720385577.jpg" alt="Imagen jugadores" class="img-fluid" id="jugadores">
+            <img src="https://www.palco23.com/files/0002017/000redaccion/competiciones/ligue%201/psg/Parc-des-Princes-948.jpg" alt="Imagen estadio" class="img-fluid" id="estadio">
+ 
+            </div>
+            <div class="col-md-7">
+                <h3>Historia</h3>
+                <p>El PSG, o Paris Saint-Germain Football Club, se estableció en 1970 gracias a la petición de aproximadamente 20,000 personas para tener un equipo importante en la capital francesa. Un grupo de empresarios cumplió con este deseo y se asociaron con el Saint-Germain-en-Laye para crear un equipo que debutó en la 
+                    segunda división de la liga francesa y rápidamente ascendió a la máxima categoría. En la temporada 1971-1972, hubo una división entre los parisinos y el Saint-Germain, lo que resultó en que los primeros mantuvieran el nombre de PSG y descendieran a la tercera división, mientras que los segundos se unieron al 
+                    CA Montreuil y se convirtieron en el Paris FC. El PSG volvió a la primera división en 1974 y desde entonces ha sido campeón de Francia en varias ocasiones, así como ganador de varios títulos nacionales e internacionales. El equipo usa los colores azul y rojo de París y el blanco de Saint-Germain-en-Laye en su 
+                    uniforme, que incluye una camiseta azul con una franja vertical roja en el centro, pantalones cortos y medias azules. El escudo del equipo presenta la Torre Eiffel y la flor de lis, aunque sufrió un rediseño en 2013 que eliminó la cuna real de Luis XIV pero mantuvo la flor de lis como símbolo del rey francés.</p>
+                <h3>Apodo</h3>
+                <p>Les Rouge-et-Bleu (Los rojo y azul) y Les Parisiens (Los parisinos)</p>
+                <h3>Estadio</h3>
+                <p>Parc des Princes</p>
+                <h3>Ciudad Sede</h3>
+                <p>París</p>
+                <h3>Jugadores importantes</h3>
+                <ul>
+                    <li>Lionel Messi</li>
+                    <li>Kylian Mbappé</li>
+                    <li>Neymar Jr</li>
+                </ul>
+                <h3><A HREF="https://es.psg.fr/"> Página Oficial </A></h3>
+                <div class="subscribe-form">
+                <h3 style="margin-bottom: 20px;">Suscríbete para recibir más información</h3>
+                <form id="subscribe-form" action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Suscribirse</button>
+                <div id="message" style="display:none;">Gracias por suscribirte!</div>
+                </form> 
+</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        const form = document.getElementById("subscribe-form");
+        const message = document.getElementById("message");
+      
+        form.addEventListener("submit", function(event) {
+          event.preventDefault(); 
+          message.style.display = "block";
+        });
+      </script>
+</body>
+</html>
